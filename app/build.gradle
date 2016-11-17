@@ -23,8 +23,14 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.squareup.sqlbrite:sqlbrite:0.8.0'
 }
 
-task helloWorld << {
+task helloWorld {
     println "Hello World"
+}
+
+task logFile {
+    def f1 = new File('C:\\Users\\admin\\Desktop\\log.txt')
+    f1.text = "Hello World File"
 }
