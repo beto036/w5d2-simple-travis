@@ -22,7 +22,7 @@ public class EmailUnitTest {
     @Test
     public void obfuscates_longEmails() throws Exception{
         EmailObfuscator emailObfuscator = new EmailObfuscator();
-        assertEquals(emailObfuscator.obfuscate("aaaa@gmail.com"),"a**a@gmail.com");
+        assertEquals(emailObfuscator.obfuscate("aaaa@gmail.com"),"a***a@gmail.com");
         assertEquals(emailObfuscator.obfuscate("abbbb@yahoo.com"),"a***b@yahoo.com");
         assertEquals(emailObfuscator.obfuscate("abcccch@gmail.com"),"a***h@gmail.com");
     }
